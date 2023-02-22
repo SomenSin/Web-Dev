@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <style>
+            .tbl1 {
+                style="float:left";
+            }
+           .tbl2 {
+                style="float:right";
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tbl1">
+        <table border="1" cellpadding="20px" >
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Mobile Number</th>
+            </tr>
+            <tr>
+                <td>Somendra</td>
+                <td><ul>
+                    <li>
+                       658461568
+                    </li>
+                    <li>5614514</li>
+                </ul></td>
+                <td>51465848564</td>
+            </tr>
+        </table>
+        </div>
+        <div class="tbl1">
+
+        <table border="2" >
+            <tr>
+                <th>Name</th>
+                <td>Somu</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Mobile Number</th>
+                <td>584654564</td>
+            </tr>
+            <tr>
+                <td>2545241</td>
+            </tr>
+        </table>
+        </div>
+        <hr>
+        <br>
+
+        <h1>Nested list</h1>
+        <ul type="square" style="position: left;">
+            <li>Name</li>
+            <ol>
+                <li>Somendra</li>
+                <ul>
+                    <li>Age-20</li>
+                    <table border="2">
+                        <tr>
+                            <th>Name</th>
+                            <td>Somu</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Mobile Number</th>
+                            <td>584654564</td>
+                        </tr>
+                        <tr>
+                            <td>2545241</td>
+                        </tr>
+                    </table>
+                </ul>
+                <li>Adi</li>
+                <ul type="circle">
+                    <li>
+                        age-19
+                    </li>
+                </ul>
+            </ol>
+            <li>Mobile Number</li>
+            <ol type="i" start="4">
+                <li>5456456</li>
+                <li>545454</li>
+            </ol>
+        </ul>
+        <hr>
+        <h1>Descriptive List</h1>
+        <dl>
+            <dt> India</dt>
+            <dd>India is the largest Country in population</dd>
+            <dt>U.S.A</dt>
+            <dd>U.S.A is a super power</dd>
+        </dl>
+    </body>
+</html>
