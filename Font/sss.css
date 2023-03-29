@@ -1,0 +1,42 @@
+.one {
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: blueviolet;
+    font-style: italic;
+    font-weight: 500;
+    border-style: double;
+    border-color: yellow;
+}
+.two {
+    font-family: 'Delicious Handrawn', cursive;
+    color: red;
+    border: 3px solid #73AD21;
+    position: static;
+    height: 200px;
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: green;
+    font-size: xx-large;
+    border-style: dotted;
+}
+.four {
+    border-style: groove;
+    border-color: blue;
+}
+.five {
+    border-style:inset;
+    border-radius: 20px;
+    border-width: 20px;
+}
+.six {
+    border-style:solid;
+    border-color:crimson;
+}
+.num {
+    font-size: 150px;
+}
