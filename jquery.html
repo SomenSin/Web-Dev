@@ -1,0 +1,67 @@
+doc <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>J Query</title>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+</head>
+<body>
+    <div class="Heading">
+        <p>Hi this is a heading</p>
+    </div>
+    <h1 style="display:none" id="hid">hidden heading</h1>
+    <button onclick="show()">Show</button>
+    <button onclick="hide()">Hide</button>
+    <h3 id="change">Hi this is h3 heading ...</h3>
+    <button id="pretext">Prepend text</button>
+    <button id="edit">Edit</button>
+    <button id="apnd">Append</button>
+    <p>  
+         <label for="price">Price range:</label>  
+         <input type="text" id="price"   
+            style="border:0; color:red; font-weight:bold;">  
+      </p>  
+      <div id="slider-3"></div>  
+      <h1 style="display: none;" id="last">bye bye!!</h1>
+</body> 
+    <script>
+          $(function() {  
+            $( "#slider-3" ).slider({  
+               range:true,  
+               min: 0,  
+               max: 500,  
+               values: [ 50, 300 ],  
+               slide: function( event, ui ) {  
+                  $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );  
+               }  
+           });  
+         $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +  
+            " - $" + $( "#slider-3" ).slider( "values", 1 ) );  
+         });  
+        function show() {
+            $('.Heading').css("color"," red");
+            $('#hid').css("display","block");
+            $('#last').slideToggle("slow");
+        }
+        function hide() {
+            $('.Heading').css("color","black");
+            $('#hid').css("display","none");
+            $('#last').slideToggle("slow");
+        }
+        $('#edit').click(function(){
+                $("#change").html("Edited heading h3...");
+            });
+        $('#apnd').click(function(){
+                $("#change").append(" Appended text");
+            });
+        $('#pretext').click(function(){
+                $("#change").prepend(" Prepend text ");
+            });
+    </script>
+</html>
