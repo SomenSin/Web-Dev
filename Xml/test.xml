@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<note>
+  <border>
+    <to>To : Shubham</to>
+    <from>From : Somu</from>
+    <heading>Reminder : </heading>
+    <body>Dont forget me this weekend!</body>
+  </border>
+  
+</note>

@@ -1,0 +1,19 @@
+note{
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+  line-height: 1.45;
+  background: #E0DCCC;
+  color: #333;
+  padding: 1em;
+}
+body{
+    border: 2px solid;
+}
+to,from,heading,body {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 1em;
+  text-shadow: 1px 2px 1px #C79292
+}
+to,from{
+    display:block;  
+}
